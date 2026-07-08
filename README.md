@@ -8,4 +8,7 @@ ssh g14 "nvidia-smi"
 
 srun -p 4090 --cpus-per-task=16 python mace_run.py
 #申请16个核，不使用gpu
+
+scancel -u your_name
+#停止你的全部作业
 ```
